@@ -1,0 +1,32 @@
+/* Style for h1 tag */
+h1 {
+    color: #4CAF50; /* Green color */
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Style for p tag */
+  p {
+    color: #980101; /* Blue color */
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    color: #af4c95; /* Green color */
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  /* Default link style: no underline and a custom color */
+a {
+    text-decoration: none; /* Removes underline */
+    color: #FF5733; /* Default link color (Orange) */
+  }
+  
+  /* Change color on hover */
+  a:hover {
+    color: #1E90FF; /* Changes to blue on hover */
+  }
+  

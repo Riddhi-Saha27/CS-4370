@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+</head>
+<body>
+
 <?php
 
 if (isset($_POST['artist'], $_POST['album'], $_POST['song'], $_POST['reviewer'], $_POST['platform'], $_POST['rating'], $_POST['review'])) {
@@ -13,15 +22,6 @@ if (isset($_POST['artist'], $_POST['album'], $_POST['song'], $_POST['reviewer'],
     exit;
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Confirmation</title>
-</head>
-<body>
     <h1>Thank you for entering a review!</h1>
 
     <h2>Here are the details of your review:</h2>

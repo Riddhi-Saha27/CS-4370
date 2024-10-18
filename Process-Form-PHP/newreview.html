@@ -8,24 +8,24 @@
 <body>
     <h1>Song Review Form</h1>
     
-    <form action="#" method="POST">
-        <!-- Artist Name -->
+    <form action="viewreview.php" method="POST">
+    
         <label for="artist">Artist:</label><br>
         <input type="text" id="artist" name="artist" required><br><br>
         
-        <!-- Album Title -->
+       
         <label for="album">Album Title:</label><br>
         <input type="text" id="album" name="album" required><br><br>
         
-        <!-- Song Title -->
+       
         <label for="song">Song Title:</label><br>
         <input type="text" id="song" name="song" required><br><br>
         
-        <!-- Reviewer Name -->
+        
         <label for="reviewer">Reviewer Name:</label><br>
         <input type="text" id="reviewer" name="reviewer" required><br><br>
         
-        <!-- Streaming Platform Dropdown -->
+      
         <label for="platform">Streaming Platform:</label><br>
         <select id="platform" name="platform" required>
             <option value="spotify">Spotify</option>
@@ -35,7 +35,7 @@
             <option value="tidal">Tidal</option>
         </select><br><br>
         
-        <!-- Rating (1-5) using Radio Buttons -->
+      
         <label>Rating:</label><br>
         <input type="radio" id="rating1" name="rating" value="1" required>
         <label for="rating1">1</label><br>
@@ -48,11 +48,11 @@
         <input type="radio" id="rating5" name="rating" value="5">
         <label for="rating5">5</label><br><br>
         
-        <!-- Review Text Area -->
+       
         <label for="review">Review:</label><br>
         <textarea id="review" name="review" rows="4" cols="50" placeholder="Write your review here..." required></textarea><br><br>
         
-        <!-- Submit Button -->
+       
         <input type="submit" value="Submit Review">
     </form>
 </body>

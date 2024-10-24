@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #imageContainer img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Buttons to change background colors -->
+    <div>
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('yellow')">Yellow</button>
+        <button onclick="changeColor('green')">Green</button>
+        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('random')">Random</button>
+    </div>
+
+    <!-- Image and Next Button -->
+    <div id="imageContainer">
+        <img id="displayedImage" src="image1.jpeg" alt="Image Viewer">
+        <br>
+        <button onclick="nextImage()">Next</button>
+    </div>
+
+    <script>
+        // Function to change background color
+        function changeColor(color) {
+            if (color === 'random') {
+                const colors = ['red', 'yellow', 'green', 'black'];
+                color = colors[Math.floor(Math.random() * colors.length)];
+            }
+            document.body.style.backgroundColor = color;
+        }
+
+        // Array of image filenames
+        const images = ['image1.jpeg', 'image2.jpeg', 'image3.jpeg', 'image4.jpeg', 'image5.jpeg'];
+        let currentImageIndex = 0;
+
+        // Function to cycle through images
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById('displayedImage').src = images[currentImageIndex];
+        }
+    </script>
+
+</body>
+</html>
